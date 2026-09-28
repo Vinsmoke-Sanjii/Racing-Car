@@ -1,0 +1,150 @@
+#performance {
+    min-height: 100vh;
+    padding-bottom: 120px;
+    background:
+        radial-gradient(circle at 50% 60%, rgba(255, 20, 20, 0.08), transparent 35%),
+        #050505;
+}
+
+.performance-header {
+    padding: 120px 8% 60px;
+}
+
+.performance-header span {
+    color: #ff2020;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.performance-header h2 {
+    margin-top: 20px;
+    max-width: 800px;
+    font-size: clamp(50px, 7vw, 100px);
+    line-height: 0.9;
+    letter-spacing: -5px;
+}
+
+.performance-header h2 strong {
+    display: block;
+    color: #ff2020;
+}
+
+.performance-stats {
+    width: 84%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.performance-stat {
+    position: relative;
+    padding: 40px 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.performance-stat:last-child {
+    border-right: none;
+}
+
+.performance-stat span {
+    display: block;
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.performance-stat strong {
+    font-size: clamp(35px, 4vw, 60px);
+    font-weight: 800;
+    letter-spacing: -3px;
+}
+
+.performance-stat small {
+    margin-left: 5px;
+    color: #ff2020;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.telemetry {
+    width: 84%;
+    margin: 80px auto 0;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+}
+
+.rpm-panel {
+    position: relative;
+    padding: 40px;
+    min-height: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(145deg, #0c0c0c, #070707);
+}
+
+.panel-label {
+    color: #666;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.rpm-number {
+    margin-top: 40px;
+    font-size: clamp(60px, 8vw, 110px);
+    font-weight: 800;
+    letter-spacing: -6px;
+}
+
+.rpm-number span {
+    color: #ff2020;
+}
+
+.rpm-bar {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    height: 6px;
+    background: #181818;
+    overflow: hidden;
+}
+
+#rpm-progress {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #ff2020, #ff6a00);
+    transition: width 0.3s ease;
+}
+
+.dashboard-data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.dashboard-box {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #0a0a0a;
+}
+
+.dashboard-box span {
+    display: block;
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.dashboard-box strong {
+    font-size: 28px;
+}
+
+.dashboard-box small {
+    color: #ff2020;
+    font-size: 8px;
+    letter-spacing: 1px;
+}

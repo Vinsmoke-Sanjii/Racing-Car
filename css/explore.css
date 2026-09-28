@@ -1,0 +1,315 @@
+.machines-page {
+    min-height: 100vh;
+    padding-top: 80px;
+    background:
+        radial-gradient(
+            circle at 70% 20%,
+            rgba(255, 20, 20, 0.08),
+            transparent 30%
+        ),
+        #050505;
+}
+
+.machines-hero {
+    width: 84%;
+    margin: auto;
+    padding: 110px 0 100px;
+}
+
+.machines-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #666;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.machines-label span {
+    width: 30px;
+    height: 1px;
+    background: #ff2020;
+}
+
+.machines-hero h1 {
+    max-width: 900px;
+    margin-top: 25px;
+    font-size: clamp(60px, 9vw, 130px);
+    line-height: 0.85;
+    letter-spacing: -6px;
+    font-weight: 900;
+}
+
+.machines-hero h1 span {
+    display: block;
+    color: #ff2020;
+}
+
+.machines-hero p {
+    max-width: 500px;
+    margin-top: 35px;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+.cars-section {
+    width: 84%;
+    margin: auto;
+}
+
+.car-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    min-height: 550px;
+    margin-bottom: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.car-card.reverse {
+    grid-template-columns: 45% 55%;
+}
+
+.car-number {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 5;
+    color: #ff2020;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.car-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255, 30, 30, 0.12),
+            transparent 55%
+        );
+}
+
+.car-image::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    background: #ff2020;
+    filter: blur(100px);
+    opacity: 0.08;
+}
+
+.car-image img {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 650px;
+    height: 380px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.car-card:hover .car-image img {
+    transform: scale(1.06) translateX(8px);
+}
+
+.car-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px;
+    background: #080808;
+}
+
+.car-title span {
+    color: #ff2020;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.car-title h2 {
+    margin-top: 12px;
+    font-size: clamp(40px, 5vw, 75px);
+    line-height: 0.9;
+    letter-spacing: -4px;
+}
+
+.car-description {
+    max-width: 480px;
+    margin-top: 30px;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.car-specs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.car-specs div {
+    padding: 20px 12px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.car-specs div:last-child {
+    border-right: none;
+}
+
+.car-specs span {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.car-specs strong {
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+
+.car-specs small {
+    margin-left: 4px;
+    color: #ff2020;
+    font-size: 7px;
+    letter-spacing: 1px;
+}
+
+.specification {
+    margin-top: 30px;
+}
+
+.specification > span {
+    color: #555;
+    font-size: 8px;
+    letter-spacing: 3px;
+}
+
+.specification p {
+    margin-top: 10px;
+    color: #999;
+    font-size: 10px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+.machines-footer {
+    padding: 120px 8%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.machines-footer > span {
+    color: #555;
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+.machines-footer h2 {
+    margin: 25px 0 40px;
+    font-size: clamp(45px, 7vw, 100px);
+    line-height: 0.9;
+    letter-spacing: -5px;
+}
+
+.machines-footer h2 strong {
+    display: block;
+    color: #ff2020;
+}
+
+.machines-footer a {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid #ff2020;
+    color: #fff;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.machines-footer a:hover {
+    background: #ff2020;
+    transform: translateY(-3px);
+}
+
+
+@media (max-width: 900px) {
+
+    .machines-hero {
+        width: 90%;
+        padding: 90px 0 70px;
+    }
+
+    .cars-section {
+        width: 90%;
+    }
+
+    .car-card,
+    .car-card.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .car-image {
+        min-height: 350px;
+    }
+
+    .car-info {
+        padding: 45px 30px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .machines-page {
+        padding-top: 70px;
+    }
+
+    .machines-hero h1 {
+        font-size: 55px;
+        letter-spacing: -3px;
+    }
+
+    .car-image {
+        min-height: 280px;
+    }
+
+    .car-image img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .car-specs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .car-specs div:nth-child(2) {
+        border-right: none;
+    }
+
+    .car-specs div:nth-child(3),
+    .car-specs div:nth-child(4) {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .car-info {
+        padding: 40px 20px;
+    }
+
+}

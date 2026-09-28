@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050505;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+#main-content {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-content h1 {
+    margin-top: 60px;
+    font-size: clamp(40px, 8vw, 120px);
+    font-weight: 800;
+    letter-spacing: -4px;
+}
+
+::selection {
+    background: #ff2020;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff2020;
+}
+html,
+body {
+    cursor: url("../assets/gear.svg") 20 20, auto;
+}
+
+button,
+a {
+    cursor: url("../assets/gear.svg") 20 20, pointer;
+}

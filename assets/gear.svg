@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vintage racing gear shifter</title>
+  <desc id="desc">A black leather and brushed metal H-pattern racing gear shifter with red accents.</desc>
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#444"/>
+      <stop offset=".18" stop-color="#ddd"/>
+      <stop offset=".42" stop-color="#777"/>
+      <stop offset=".65" stop-color="#f1f1f1"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <radialGradient id="knob" cx="35%" cy="25%" r="75%">
+      <stop offset="0" stop-color="#333"/>
+      <stop offset=".45" stop-color="#111"/>
+      <stop offset="1" stop-color="#020202"/>
+    </radialGradient>
+    <linearGradient id="redMetal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7b0808"/>
+      <stop offset=".45" stop-color="#ff3030"/>
+      <stop offset="1" stop-color="#520000"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="350" cy="820" rx="255" ry="38" fill="#000" opacity=".65" filter="url(#shadow)"/>
+
+  <!-- base -->
+  <ellipse cx="350" cy="700" rx="255" ry="125" fill="#080808" stroke="#202020" stroke-width="10"/>
+  <ellipse cx="350" cy="685" rx="238" ry="112" fill="url(#metal)" stroke="#111" stroke-width="8"/>
+  <ellipse cx="350" cy="680" rx="218" ry="94" fill="#111" stroke="#777" stroke-width="3"/>
+
+  <!-- H-pattern gate -->
+  <g fill="none" stroke="url(#metal)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M220 620 V735"/>
+    <path d="M350 620 V735"/>
+    <path d="M480 620 V735"/>
+    <path d="M220 650 H350"/>
+    <path d="M350 705 H480"/>
+  </g>
+  <g fill="none" stroke="#ff2020" stroke-width="4" opacity=".85">
+    <path d="M220 620 V735"/>
+    <path d="M350 620 V735"/>
+    <path d="M480 620 V735"/>
+  </g>
+
+  <!-- leather boot -->
+  <path d="M270 665 C285 590 305 535 350 515 C395 535 415 590 430 665
+           C400 705 300 705 270 665Z"
+        fill="#090909" stroke="#333" stroke-width="6"/>
+  <path d="M290 650 C310 590 325 550 350 535 C375 550 390 590 410 650"
+        fill="none" stroke="#8c0b0b" stroke-width="5" stroke-dasharray="9 7"/>
+
+  <!-- shaft -->
+  <path d="M322 535 L332 330 L368 330 L378 535Z" fill="url(#metal)" stroke="#171717" stroke-width="7"/>
+  <rect x="318" y="490" width="64" height="55" rx="14" fill="url(#redMetal)" stroke="#111" stroke-width="5"/>
+  <rect x="326" y="430" width="48" height="75" rx="12" fill="url(#metal)" stroke="#222" stroke-width="5"/>
+
+  <!-- knob -->
+  <ellipse cx="350" cy="270" rx="135" ry="115" fill="#070707" stroke="url(#metal)" stroke-width="16"/>
+  <ellipse cx="350" cy="270" rx="116" ry="97" fill="url(#knob)" stroke="#222" stroke-width="4"/>
+
+  <!-- knob top -->
+  <ellipse cx="350" cy="255" rx="93" ry="72" fill="#0a0a0a" stroke="#aaa" stroke-width="3"/>
+  <text x="350" y="285" text-anchor="middle" fill="#e8e8e8"
+        font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">R  1  3  5</text>
+  <text x="350" y="315" text-anchor="middle" fill="#e8e8e8"
+        font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">   2  4  6</text>
+  <path d="M295 275 H325 V315 M325 275 H375 V315 M375 275 H405"
+        fill="none" stroke="#ddd" stroke-width="4" stroke-linecap="round"/>
+  <path d="M295 275 V250 M325 275 V250 M375 275 V250 M405 275 V250"
+        fill="none" stroke="#ddd" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- red stitching -->
+  <path d="M255 260 C245 320 270 365 300 385" fill="none" stroke="#ff2020" stroke-width="5" stroke-dasharray="8 8"/>
+  <path d="M445 260 C455 320 430 365 400 385" fill="none" stroke="#ff2020" stroke-width="5" stroke-dasharray="8 8"/>
+
+  <!-- bolts -->
+  <g fill="#bbb" stroke="#222" stroke-width="5">
+    <circle cx="165" cy="680" r="14"/><circle cx="535" cy="680" r="14"/>
+    <circle cx="205" cy="750" r="14"/><circle cx="495" cy="750" r="14"/>
+  </g>
+
+  <!-- subtle red glow -->
+  <ellipse cx="350" cy="400" rx="190" ry="35" fill="#ff2020" opacity=".12" filter="url(#glow)"/>
+</svg>

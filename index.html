@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAG // RACING</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/performance.css">
+</head>
+
+<body>
+    <div id="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                DRAG <span>//</span> RACING
+            </div>
+            <div class="loading-info">
+                <p>SYSTEM INITIALIZATION</p>
+                <div class="loading-number">
+                    <span id="loading-number">00</span>%
+                </div>
+            </div>
+            <div class="loading-bar">
+                <div id="loading-progress"></div>
+            </div>
+            <div class="system-checks">
+                <div>
+                    <span>ENGINE SYSTEM</span>
+                    <strong>READY</strong>
+                </div>
+                <div>
+                    <span>AERODYNAMICS</span>
+                    <strong>READY</strong>
+                </div>
+            </div>
+            <div id="system-ready">
+                SYSTEM READY
+            </div>
+            <button id="enter-site">
+                ENTER
+            </button>
+        </div>
+    </div>
+    <header id="navbar">
+        <div class="nav-logo">
+            DRAG <span>//</span> RACING
+        </div>
+        <nav class="nav-links">
+            <a href="#hero">
+                HOME
+            </a>
+            <a href="explore.html">
+                MACHINES
+            </a>
+            <a href="#performance">
+                PERFORMANCE
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="race-background">
+            <div class="race-sky"></div>
+            <div class="race-horizon"></div>
+            <div class="race-road">
+                <div class="road-lines"></div>
+            </div>
+            <div class="road-glow"></div>
+            <div class="speed-streaks">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </div>
+            <div class="hero-grid"></div>
+            <div class="hero-content">
+                <div class="hero-label">
+                    <span></span>
+                    HIGH PERFORMANCE DRAG RACING
+                </div>
+                <h1>
+                    BUILT
+                    <br>
+                    <span>FOR THE RACE.</span>
+                </h1>
+                <p>LET'S MOVE INTO THE WORLD OF RACING!!</p>
+                <div class="hero-buttons">
+                    <button class="primary-button">
+                        EXPLORE THE CAR
+                    </button>
+                    <button type="button" class="secondary-button" id="engine-button">
+                        START ENGINE
+                    </button>
+                </div>
+                <div class="gear-controls">
+                    <span>
+                        GEAR CONTROL
+                    </span>
+                    <div class="gear-keys">
+                        <div>
+                            N
+                        </div>
+                        <div>
+                            1
+                        </div>
+                        <div>
+                            2
+                        </div>
+                        <div>
+                            3
+                        </div>
+                        <div>
+                            4
+                        </div>
+                        <div>
+                            5
+                        </div>
+                        <div>
+                            6
+                        </div>
+                    </div>
+                    <p>
+                        PRESS 1–6 TO SHIFT
+                    </p>
+                </div>
+            </div>
+            <div class="hero-car-container">
+                <div class="car-glow"></div>
+                <div class="drag-car">
+                    <img
+                        src="assets/images/ferrari.png"
+                        alt="Ferrari drag racing car"
+                    >
+                    <div class="exhaust-glow"></div>
+                </div>
+                <div class="hero-telemetry">
+                    <div>
+                        <span>
+                            POWER
+                        </span>
+                        <strong id="hero-power">
+                            900
+                        </strong>
+                        <small>
+                            HP
+                        </small>
+                    </div>
+                    <div>
+                        <span>
+                            SPEED
+                        </span>
+                        <strong id="hero-speed">
+                            000
+                        </strong>
+                        <small>
+                            KM/H
+                        </small>
+                    </div>
+                    <div>
+                        <span>
+                            RPM
+                        </span>
+                        <strong id="hero-rpm">
+                            0900
+                        </strong>
+                        <small>
+                            RPM
+                        </small>
+                    </div>
+                    <div>
+                        <span>
+                            GEAR
+                        </span>
+                        <strong id="hero-gear">
+                            N
+                        </strong>
+                        <small>
+                            SHIFT
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="performance">
+            <div class="performance-header">
+                <span>
+                    01 / RATTLE
+                </span>
+                <h2>
+                    BORN TO
+                    <strong>
+                        DIE.
+                    </strong>
+                </h2>
+            </div>
+            <div class="performance-stats">
+                <div class="performance-stat">
+                    <span>
+                        POWER
+                    </span>
+                    <strong data-target="900">
+                        0
+                    </strong>
+                    <small>
+                        HP
+                    </small>
+                </div>
+                <div class="performance-stat">
+                    <span>
+                        TORQUE
+                    </span>
+                    <strong data-target="1200">
+                        0
+                    </strong>
+                    <small>
+                        NM
+                    </small>
+                </div>
+                <div class="performance-stat">
+                    <span>
+                        TOP SPEED
+                    </span>
+                    <strong data-target="340">
+                        0
+                    </strong>
+                    <small>
+                        KM/H
+                    </small>
+                </div>
+                <div class="performance-stat">
+                    <span>
+                        QUARTER MILE
+                    </span>
+                    <strong data-target="8.4">
+                        0
+                    </strong>
+                    <small>
+                        SEC
+                    </small>
+                </div>
+            </div>
+            <div class="telemetry">
+                <div class="rpm-panel">
+                    <span class="panel-label">
+                        ENGINE RPM
+                    </span>
+                    <div class="rpm-number">
+                        <span id="rpm-value">
+                            0900
+                        </span>
+                    </div>
+                    <div class="rpm-bar">
+                        <div id="rpm-progress"></div>
+                    </div>
+                </div>
+                <div class="dashboard-data">
+                    <div class="dashboard-box">
+                        <span>
+                            SPEED
+                        </span>
+                        <strong id="speed-value">
+                            000
+                        </strong>
+                        <small>
+                            KM/H
+                        </small>
+                    </div>
+                    <div class="dashboard-box">
+                        <span>
+                            GEAR
+                        </span>
+                        <strong id="gear-value">
+                            N
+                        </strong>
+                    </div>
+                    <div class="dashboard-box">
+                        <span>
+                            ENGINE TEMP
+                        </span>
+                        <strong id="temperature-value">
+                            72
+                        </strong>
+                        <small>
+                            °C
+                        </small>
+                    </div>
+                    <div class="dashboard-box">
+                        <span>
+                            LAUNCH STATUS
+                        </span>
+                        <strong id="launch-status">
+                            READY
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/loading.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/telemetry.js"></script>
+</body>
+</html>
